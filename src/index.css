@@ -52,7 +52,8 @@
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     font-family: "Golos Text", sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
   }
 }
 
@@ -263,6 +264,40 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.icon-badge-sm {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--amber), #c8880c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header-transparent {
+  background: transparent;
+}
+
+.header-scrolled {
+  background: rgba(13, 24, 16, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(45, 82, 52, 0.35);
+}
+
+.big-number-bg {
+  font-family: "Oswald", sans-serif;
+  font-size: 14rem;
+  font-weight: 700;
+  color: rgba(240, 160, 32, 0.04);
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
 }
 
 .big-number {
